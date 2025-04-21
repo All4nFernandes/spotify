@@ -1,0 +1,26 @@
+.logo-spotify {
+  width: 50px;
+  height: 50px;
+  border: 50%;
+  margin-top: 20px;
+}
+
+.box-login {
+  /* display: flex; */
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 55%;
+  height: 85%;
+  position: absolute;
+  left: 23%;
+  top: 8%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.logo-links {
+  width: 25px;
+  height: 25px;
+  border: 50%;
+}
