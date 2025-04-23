@@ -24,26 +24,42 @@ include_once __DIR__ . "/../../components/head.php";
                 <a href="/home.php">
                     <img class="logo-spotify" src="\spotify\view\assets\img\spotify_logo_branca.png" alt="logo">
                 </a>
-                <h1>Entrar no Spotify</h1>
+                <h1 class="title-login">Entrar no Spotify</h1>
             </div>
             <div>
-                <ul>
-                    <li>
+                <ul class="icones-centralizados">
+                    <li class="container-link-login">
                         <a class="link-login" href="">
-                            <img class="logo-links" src="\spotify\view\assets\img\svg\google-svgrepo.svg"
+                            <img class="logo-links" src="\spotify\view\assets\img\svg\google_logo.svg"
                                 alt="logo-google">
-                            Continuar com o Google
+                            <span class="text-link">Continuar com o Google</span>
                         </a>
                     </li>
-                    <li><a class="link-login" href="">Continuar com o Facebook</a></li>
-                    <li><a class="link-login" href="">Continuar com a Apple</a></li>
-                    <li><a class="link-login" href="">Continuar com um número de telefone</a></li>
+                    <li class="container-link-login">
+                        <a class="link-login" href="">
+                            <img class="logo-links" src="\spotify\view\assets\img\svg\facebook_logo.svg"
+                                alt="logo-facebook">
+                            <span class="text-link">Continuar com o Facebook</span>
+                        </a>
+                    </li>
+                    <li class="container-link-login">
+                        <a class="link-login" href="">
+                            <img class="logo-links" src="\spotify\view\assets\img\svg\apple_logo.svg" alt="apple logo">
+                            <span class="text-link">Continuar com a Apple</span>
+                        </a>
+                    </li>
+                    <li class="container-link-login">
+                        <a class="link-login" href="">
+                            <span class="text-link">Continuar com um número de telefone</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <hr>
+            <hr class="barra-vertical">
             <form action="/home.php" method="POST">
                 <div>
-                    <div> <label for="email">E-mail ou nome de usuário </label>
+                    <div>
+                        <label for="email">E-mail ou nome de usuário </label>
                         <input class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
                             required>
                         <label for="senha">Senha </label>

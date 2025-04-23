@@ -1,26 +1,74 @@
 .logo-spotify {
   width: 50px;
   height: 50px;
-  border: 50%;
-  margin-top: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: -55px;
 }
 
 .box-login {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  width: 55%;
+  padding: 5% 0 0 0;
+  width: 50%;
   height: 85%;
   position: absolute;
-  left: 23%;
-  top: 8%;
+  left: 25%;
+  top: 5%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
+.icones-centralizados {
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-login {
+  text-align: center;
+  font-size: 2em;
+}
 
 .logo-links {
-  width: 25px;
-  height: 25px;
-  border: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  align-items: center;
+  margin: 0px 15px 0px 3px;
+}
+
+.text-link {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: none;
+  letter-spacing: normal;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.link-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  padding: 10px;
+  color: #ffff;
+}
+
+.container-link-login {
+  margin: 20px auto;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.barra-vertical {
+  width: 30vw;
 }
