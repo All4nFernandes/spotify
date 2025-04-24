@@ -58,18 +58,13 @@ include_once __DIR__ . "/../../components/head.php";
             <hr class="barra-vertical">
             <form action="/home.php" method="POST">
                 <div>
-                    <div>
-                        <label for="email">E-mail ou nome de usuário </label>
-                        <input class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
-                            required>
-                        <label for="senha">Senha </label>
-                        <input class="login-input" type="password" name="senha" placeholder="Senha" required>
+                    <div class="container-login-input">
+                        <label class="label-login" for="email"><span>E-mail ou nome de usuário</span> </label>
+                        <textarea class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
+                            required></textarea>
                     </div>
-                    <div>
-                        <button type="submit">Entrar</button>
-                    </div>
-                    <div>
-                        <a href="">Esqueceu sua senha?</a>
+                    <div class="container-btn">
+                        <button class="btn-login" type="submit">Continuar</button>
                     </div>
                     <div>
                         <span>Não tem uma conta?</span>
