@@ -60,15 +60,15 @@ include_once __DIR__ . "/../../components/head.php";
                 <div>
                     <div class="container-login-input">
                         <label class="label-login" for="email"><span>E-mail ou nome de usuário</span> </label>
-                        <textarea class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
-                            required></textarea>
+                        <input class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
+                            required>
                     </div>
                     <div class="container-btn">
                         <button class="btn-login" type="submit">Continuar</button>
                     </div>
-                    <div>
-                        <span>Não tem uma conta?</span>
-                        <a href="">Inscrever-se no Spotify.</a>
+                    <div class="box-increver-se">
+                        <span class="sem-conta">Não tem uma conta?</span>
+                        <a class="increver-se" href="">Inscrever-se no Spotify.</a>
                     </div>
                 </div>
             </form>

@@ -27,6 +27,8 @@
 .title-login {
   text-align: center;
   font-size: 2em;
+  padding: 20px;
+  margin-top: -25px;
 }
 
 .logo-links {
@@ -57,7 +59,7 @@
 }
 
 .container-link-login {
-  margin: 20px auto;
+  margin: 12px auto;
   width: 300px;
   border: 1px solid white;
   border-radius: 20px;
@@ -65,7 +67,7 @@
 }
 
 .barra-vertical {
-  width: 30vw;
+  width: 35vw;
 }
 .label-login {
   color: white;
@@ -78,35 +80,50 @@
 .container-login-input {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   margin-bottom: 15px;
   position: relative;
-  left: 25%;
+  left: 30%;
 }
 
 .login-input {
   padding: 3px;
-  text-align: center;
   border: 1px solid white;
   border-radius: 5px;
   background-color: black;
   color: white;
-  width: 23vw;
-  text-align: center;
+  width: 300px;
+  height: 7vh;
+  box-sizing: border-box;
 }
 
 .login-input::placeholder {
-  color: white;
-}
-
-.container.btn {
-  margin-top: 40px;
+  padding: 8px;
 }
 
 .btn-login {
-  background-color: rgb(12, 201, 12);
+  background-color: #1ed760;
   color: black;
   width: 300px;
   height: 50px;
   border-radius: 30px;
+  margin: 10px;
+}
+
+.btn-login:hover {
+  cursor: pointer;
+}
+
+.box-increver-se {
+  margin: 30px;
+  padding: 10px;
+  /* margin-top: 10px; */
+  font-size: 1em;
+}
+
+.sem-conta {
+  color: gray;
+}
+
+.increver-se {
+  color: #ffff;
 }
