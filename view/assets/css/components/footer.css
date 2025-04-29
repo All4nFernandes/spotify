@@ -1,6 +1,6 @@
 .ft-footer {
-  width: 100vw;
-  height: 50px;
+  width: 99vw;
+  height: 70px;
   background-color: black;
   color: #fff;
   display: flex;
@@ -9,7 +9,7 @@
   padding: 0 20px;
   text-align: center;
   font-size: 1rem;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }

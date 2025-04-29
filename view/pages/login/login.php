@@ -62,6 +62,8 @@ include_once __DIR__ . "/../../components/head.php";
                         <label class="label-login" for="email"><span>E-mail ou nome de usuário</span> </label>
                         <input class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
                             required>
+                        <label class="label-login" for="senha"><span>Senha</span> </label>
+                        <input class="login-input" type="password" name="senha" placeholder="Senha" required>
                     </div>
                     <div class="container-btn">
                         <button class="btn-login" type="submit">Continuar</button>
