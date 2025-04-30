@@ -1,17 +1,22 @@
 <?php
+
+include '/spotify/model/LoginModel.php';
+
 // Verifica se o usuário já está logado
 session_start();
-if (isset($_SESSION['user'])) {
-    header('Location: /home');
-    exit();
-}
-// Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    header('Location: /home');
-    exit();
+
+    $loginUsuario = new LoginModel();
+
+    if ($loginUsuario->login($email, $senha)) {
+        $_SESSION["usuario_logado"] = $email;
+        header("Location: /spotify/view/pages/home.php");
+        exit();
+    }
+    // Verifica se o formulário foi enviado
 }
 // Inclui o cabeçalho
 include_once __DIR__ . "/../../components/head.php";
@@ -56,7 +61,7 @@ include_once __DIR__ . "/../../components/head.php";
                 </ul>
             </div>
             <hr class="barra-vertical">
-            <form action="/home.php" method="POST">
+            <form action="" method="POST">
                 <div>
                     <div class="container-login-input">
                         <label class="label-login" for="email"><span>E-mail ou nome de usuário</span> </label>
