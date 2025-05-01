@@ -1,8 +1,8 @@
 <?php
 
-include '/spotify/model/LoginModel.php';
+include_once __DIR__ . '\..\..\..\model\LoginModel.php';
 
-// Verifica se o usuário já está logado
+
 session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: /spotify/view/pages/home.php");
         exit();
     }
-    // Verifica se o formulário foi enviado
 }
 // Inclui o cabeçalho
 include_once __DIR__ . "/../../components/head.php";

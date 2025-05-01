@@ -1,6 +1,6 @@
 <?php
 
-include '/../database/Database.php';
+include_once __DIR__ . '\..\database\Database.php';
 
 //função para fazer login
 

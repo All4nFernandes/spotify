@@ -5,7 +5,7 @@ class Database
 
     private $host = "localhost";
     private $port = "3306";
-    private $dbName = "Sporify";
+    private $dbName = "Spotify";
     private $user = "root";
     private $password = "";
 
