@@ -1,0 +1,28 @@
+.navbar-container {
+  background-color: black;
+  margin: calc(8px * -1);
+  padding: 8px;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  min-height: calc(48px + 8px * 2);
+  position: relative;
+}
+
+.logo-navbar {
+  width: 45px;
+  height: 45px;
+  margin: -8px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+#linha-vertical {
+  height: 20px;
+  border-right: 1px solid #ffff;
+  position: relative;
+  top: 19px;
+  right: 50px;
+  margin: 0px;
+  padding: 0px;
+}

@@ -2,6 +2,7 @@
 @import url("components/main.css");
 @import url("components/footer.css");
 @import url("components/login.css");
+@import url("components/navbar.css");
 
 * {
   font-weight: bold;
