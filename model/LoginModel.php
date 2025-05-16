@@ -17,20 +17,32 @@ class LoginModel
 
     public function login($email, $senha)
     {
-        $query = "SELECT * FROM $this->tabela WHERE email = :email AND senha = :senha";
+        $query = "SELECT senha FROM $this->tabela WHERE email = :email";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":senha", $senha);
         $stmt->execute();
-        return $stmt->rowCount() > 0; // retorna true se for o login funcionar.
+
+        if ($stmt->rowCount() > 0) {
+            $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+            $hash = $usuario['senha'];
+
+            if (password_verify($senha, $hash)) {
+                return true; // Senha confere
+            }
+        }
+
+        return false; // Usuário não encontrado ou senha incorreta
     }
 
     public function Cadastrar($email, $senha)
     {
-        $query = "INSERT INTO $this->tabela('email, senha')VALUES(':email, :senha')";
+        $hash = password_hash($senha, PASSWORD_BCRYPT);
+        $perfil = 'usuario';
+        $query = "INSERT INTO $this->tabela(email, senha, perfil )VALUES( :email, :senha, :perfil)";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":senha", $senha);
+        $stmt->bindParam(":senha", $hash);
+        $stmt->bindParam(":perfil", $perfil);
         $stmt->execute();
         return $stmt->rowCount() > 0;
     }

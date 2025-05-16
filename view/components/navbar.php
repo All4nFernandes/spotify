@@ -73,6 +73,9 @@
                     <li>
                         <a href=""></a> <!-- btn entrar -->
                     </li>
+                    <li>
+                        <a href="\spotify\view\pages\login\logout.php"><span>Logout</span></a>
+                    </li>
                 </ul>
             </div>
         </div>

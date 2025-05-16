@@ -9,12 +9,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $loginUsuario = new LoginModel();
+    if (!empty($email) && !empty($senha)) {
 
-    if ($loginUsuario->login($email, $senha)) {
-        $_SESSION["usuario_logado"] = $email;
-        header("Location: /spotify/view/pages/home.php");
-        exit();
+        $loginUsuario = new LoginModel();
+
+        if ($loginUsuario->login($email, $senha)) {
+            $_SESSION["usuario_logado"] = $email;
+            header("Location: /spotify/view/pages/home.php");
+            exit();
+        } else
+            echo '<script>alert("Email ou senha incorretos")</script>';
+
+
     }
 }
 // Inclui o cabeçalho
@@ -22,6 +28,7 @@ include_once __DIR__ . "/../../components/head.php";
 ?>
 
 <body>
+    <script></script>
     <main class="main-login">
         <div class="box-login">
             <div>
@@ -74,7 +81,7 @@ include_once __DIR__ . "/../../components/head.php";
                     </div>
                     <div class="box-increver-se">
                         <span class="sem-conta">Não tem uma conta?</span>
-                        <a class="increver-se" href="">Inscrever-se no Spotify.</a>
+                        <a class="increver-se" href="cadastro.php">Inscrever-se no Spotify.</a>
                     </div>
                 </div>
             </form>
