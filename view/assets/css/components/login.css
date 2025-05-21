@@ -127,3 +127,15 @@
 .increver-se {
   color: #ffff;
 }
+
+@media (max-width: 1366px) {
+  .box-login {
+    width: 50%;
+    height: 108vh;
+  }
+
+  .btn-login {
+    position: relative;
+    left: 3%;
+  }
+}

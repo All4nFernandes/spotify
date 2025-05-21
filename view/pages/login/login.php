@@ -28,7 +28,6 @@ include_once __DIR__ . "/../../components/head.php";
 ?>
 
 <body>
-    <script></script>
     <main class="main-login">
         <div class="box-login">
             <div>

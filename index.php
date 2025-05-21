@@ -1,5 +1,5 @@
 <?php
 
-header("location:/spotify/view/pages/login/login.php");
+header("location:/spotify/view/pages/home.php");
 exit();
 ?>
