@@ -4,7 +4,13 @@ include_once __DIR__ . '\..\..\..\model\LoginModel.php';
 
 
 session_start();
+$usuariologado = $_SESSION['usuario_logado'] ?? null;
+if (!empty($usuariologado)) {
+    header("Location: /spotify/view/pages/home.php");
+    exit();
+}
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];

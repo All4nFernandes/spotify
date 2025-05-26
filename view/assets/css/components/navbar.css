@@ -16,22 +16,28 @@
 }
 
 .logo-navbar {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   margin: -8px;
   padding: 8px;
   border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  top: 13px;
 }
 .btn-home {
   display: flex;
-  width: 45px;
-  height: 45px;
+  width: 47px;
+  height: 47px;
   border-radius: 50%;
   background-color: rgb(34, 34, 34);
   border: 1px solid rgb(34, 34, 34);
   padding: 8px;
   margin: 8px;
   opacity: 0.5;
+  position: relative;
+  top: 2px;
 }
 
 .btn-home:hover {
@@ -40,16 +46,88 @@
   opacity: 1;
 }
 
+.itens-navbar-esquerda {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.barra-pesquisa-container {
+  background-color: rgb(34, 34, 34);
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  width: 33vw;
+  height: 8vh;
+  padding: 0 16px;
+  gap: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.barra-pesquisa {
+  background-color: transparent;
+  height: 98%;
+  background-color: rgb(34, 34, 34);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding-right: 8px;
+  padding-left: 8px;
+  outline: none;
+}
+
+.lupa-pesquisa-svg,
+.icon-box-descobrir {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.lupa-pesquisa-svg:hover,
+.icon-box-descobrir:hover {
+  opacity: 1;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.links {
+  text-align: center;
+  text-decoration: none;
+  color: #c2bdbd;
+  padding: 4px 16px 4px 8px;
+  font-size: 16px;
+}
+
 /* .svg-home:hover {
   background-color: white;
 } */
 
 #linha-vertical {
-  height: 20px;
+  height: 25px;
   border-right: 1px solid #ffff;
   position: relative;
-  top: 19px;
-  right: 50px;
-  margin: 0px;
+  top: 16px;
+  margin: 0px 8px;
   padding: 0px;
+}
+
+.links.btn-entrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }

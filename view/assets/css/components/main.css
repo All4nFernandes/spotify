@@ -5,6 +5,7 @@
   color: #ffff;
 }
 
+
 @media (max-width: 1366px) {
   .main-login {
     min-height: 120vh;

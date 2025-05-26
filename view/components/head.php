@@ -9,5 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>spotify</title>
+    <link rel="shortcut icon" type="imagex/png" href="/spotify/view/assets/img/favicon/spotify-icone-verde.ico">
+    <title>Spotify - Web Player: Musica para todas as pessoas</title>
 </head>
