@@ -119,6 +119,19 @@
   padding: 0px;
 }
 
+.linha-vertical-input {
+  height: 30px;
+  border-right: 1px solid #ffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.linha-vertical-input,
+.icon-box-descobrir {
+  position: relative;
+  left: 170px;
+}
+
 .links.btn-entrar {
   display: flex;
   justify-content: center;

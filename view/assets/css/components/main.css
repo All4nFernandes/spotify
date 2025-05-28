@@ -6,8 +6,15 @@
 }
 
 
+@media(max-width: 1920px){
+  .main-login{
+    min-height: 120vh;
+  }
+}
+
 @media (max-width: 1366px) {
   .main-login {
     min-height: 120vh;
   }
 }
+

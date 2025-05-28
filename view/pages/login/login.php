@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
+    $erro = '';
 
     if (!empty($email) && !empty($senha)) {
 
@@ -24,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: /spotify/view/pages/home.php");
             exit();
         } else
-            echo '<script>alert("Email ou senha incorretos")</script>';
+            $erro = "Email ou senha incorretos";
 
 
     }
@@ -80,6 +81,11 @@ include_once __DIR__ . "/../../components/head.php";
                             required>
                         <label class="label-login" for="senha"><span>Senha</span> </label>
                         <input class="login-input" type="password" name="senha" placeholder="Senha" required>
+                        <?php if (!empty($erro)): ?>
+                            <span class="mensagem-erro"><?php echo $erro; ?></span>
+                            <!-- Informa a mensagem de erro caso o usuário não tenha inserido o email ou senha corretamente -->
+                        <?php endif; ?>
+
                     </div>
                     <div class="container-btn">
                         <button class="btn-login" type="submit">Continuar</button>

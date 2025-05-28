@@ -24,8 +24,8 @@ $usuariologado = $_SESSION['usuario_logado'] ?? null;
                                 alt="lupa-spotify"> <!-- svg lupa -->
                             <input type="text" class="barra-pesquisa" placeholder="O que você quer ouvir?">
                             <!-- button de pesquisa -->
+                            <div class="linha-vertical-input"></div>
                             <a href="">
-                                <div id="linha-vertical"></div>
                                 <img class="icon-box-descobrir" src="/spotify/view/assets/img/svg/box-descobrir.svg"
                                     alt="icon-navegar"> <!-- svg navegar -->
                             </a>
