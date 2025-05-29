@@ -11,6 +11,7 @@
   justify-content: space-between;
   display: flex;
   text-align: center;
+  justify-content: center;
   margin: -8px;
   padding: 8px;
 }
@@ -58,17 +59,20 @@
   align-items: center;
   display: flex;
   border-radius: 50px;
-  width: 33vw;
-  height: 8vh;
+  width: 29.5vw;
+  height: 6vh;
   padding: 0 16px;
-  gap: 10px;
+  gap: 5px;
   position: relative;
   top: 8px;
 }
 
+.barra-pesquisa-container:focus-within {
+  border: 2px solid white;
+}
+
 .barra-pesquisa {
   background-color: transparent;
-  height: 98%;
   background-color: rgb(34, 34, 34);
   border: none;
   color: white;
@@ -76,6 +80,8 @@
   padding-right: 8px;
   padding-left: 8px;
   outline: none;
+  width: 21vw;
+  height: 5vh;
 }
 
 .lupa-pesquisa-svg,
@@ -95,15 +101,30 @@
 .navbar-links {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  position: relative;
+  top: 25px;
+  left: 215px;
 }
 
 .links {
   text-align: center;
   text-decoration: none;
   color: #c2bdbd;
-  padding: 4px 16px 4px 8px;
+  padding: 4px 8px 4px 8px;
   font-size: 16px;
+}
+
+.span-links {
+  font-size: 17px;
+  font-weight: bold;
+  color: gray;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.span-links:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 /* .svg-home:hover {
@@ -112,10 +133,10 @@
 
 #linha-vertical {
   height: 25px;
-  border-right: 1px solid #ffff;
+  border-right: 2px solid #ffff;
   position: relative;
-  top: 16px;
-  margin: 0px 8px;
+  top: -4px;
+  margin: 0px 9px;
   padding: 0px;
 }
 
@@ -129,18 +150,64 @@
 .linha-vertical-input,
 .icon-box-descobrir {
   position: relative;
-  left: 170px;
+  left: 35px;
+}
+
+.img-download {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  left: 5px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.box-download {
+  position: relative;
+  top: -4px;
+  margin: 0px 8px;
+  display: inline-block;
+}
+
+.span-instalar-app {
+  display: inline-block;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+.box-download:hover,
+.img-download:hover,
+.span-instalar-app:hover {
+  color: white;
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.span-inscrever-se {
+  color: #c2bdbd;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.span-inscrever-se:hover {
+  color: white;
+  transform: scale(1.03);
+  opacity: 1;
 }
 
 .links.btn-entrar {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 25px;
+  width: 60px;
+  height: 33px;
   padding: 8px 24px;
   border-radius: 50px;
   background-color: white;
   color: black;
-  font-weight: bold;
+  font-weight: bolder;
+  position: relative;
+  top: -15px;
+  left: 30px;
 }

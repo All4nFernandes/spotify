@@ -37,25 +37,28 @@ $usuariologado = $_SESSION['usuario_logado'] ?? null;
                 <>
                     <ul class="navbar-links">
                         <li>
-                            <a href="" class="links"><span>premium</span></a> <!-- link premium -->
+                            <a href="" class="links"><span class="span-links">Premium</span></a> <!-- link premium -->
                         </li>
                         <li>
-                            <a href="" class="links"><span>Suporte</span></a> <!-- link suporte -->
+                            <a href="" class="links"><span class="span-links">Suporte</span></a> <!-- link suporte -->
                         </li>
                         <li>
-                            <a href="" class="links"><span>Baixar</span></a> <!-- link baixar -->
+                            <a href="" class="links"><span class="span-links">Baixar</span></a> <!-- link baixar -->
 
                         </li>
                         <li id="linha-vertical"></li>
                         <li>
-                            <div>
-                                <img src="" alt="icone-baixar-app"> <!-- svg baixar -->
-                                <a href="" class="links"><span>Instalar aplicativo</span></a>
+                            <div class="box-download">
+                                <img class="img-download" src="/spotify/view/assets/img/botao-circular-de-download.png"
+                                    alt="icone-baixar-app">
+                                <!-- svg baixar -->
+                                <a href="" class="links"><span class="span-instalar-app">Instalar aplicativo</span></a>
                                 <!-- link instalar aplicativo -->
                             </div>
                         </li>
                         <li>
-                            <a href="/spotify/view/pages/login/cadastro.php" class="links"><span>Inscrever-se</span></a>
+                            <a href="/spotify/view/pages/login/cadastro.php" class="links "><span
+                                    class="span-inscrever-se">Inscrever-se</span></a>
                             <!-- link inscrever-se -->
                         </li>
                         <li>
