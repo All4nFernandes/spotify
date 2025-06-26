@@ -24,8 +24,7 @@
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px;
-  position: relative;
-  top: 13px;
+  margin-top: 5px;
 }
 .btn-home {
   display: flex;
@@ -37,8 +36,8 @@
   padding: 8px;
   margin: 8px;
   opacity: 0.5;
-  position: relative;
-  top: 2px;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .btn-home:hover {
@@ -56,6 +55,7 @@
 
 .barra-pesquisa-container {
   background-color: rgb(34, 34, 34);
+  /* justify-content: center; */
   align-items: center;
   display: flex;
   border-radius: 50px;
@@ -63,8 +63,7 @@
   height: 6vh;
   padding: 0 16px;
   gap: 5px;
-  position: relative;
-  top: 8px;
+  margin-top: 10px;
 }
 
 .barra-pesquisa-container:focus-within {
@@ -101,9 +100,11 @@
 .navbar-links {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  /* position: relative;
   top: 25px;
-  left: 215px;
+  left: 215px; */
+  margin-top: 25px;
+  margin-left: 225px;
 }
 
 .links {
@@ -134,8 +135,6 @@
 #linha-vertical {
   height: 25px;
   border-right: 2px solid #ffff;
-  position: relative;
-  top: -4px;
   margin: 0px 9px;
   padding: 0px;
 }
@@ -147,25 +146,20 @@
   margin: 0px;
 }
 
-.linha-vertical-input,
-.icon-box-descobrir {
-  position: relative;
-  left: 35px;
+.linha-vertical-input {
+  margin-left: 35px;
 }
 
 .img-download {
   width: 16px;
   height: 16px;
-  position: relative;
-  top: 3px;
-  left: 5px;
+  margin-left: 5px;
+  margin-top: 3px;
   display: inline-block;
   transition: 0.3s ease;
 }
 
 .box-download {
-  position: relative;
-  top: -4px;
   margin: 0px 8px;
   display: inline-block;
 }
@@ -210,4 +204,26 @@
   position: relative;
   top: -15px;
   left: 30px;
+}
+
+.btn-entrar {
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn-entrar:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.btn-perfil-usuario {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgb(34, 34, 34);
+  padding: 8px;
+  margin: 8px;
+  opacity: 0.5;
+  margin-left: 40px;
 }

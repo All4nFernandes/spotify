@@ -11,7 +11,7 @@ $usuariologado = $_SESSION['usuario_logado'] ?? null;
             <a href="/spotify/view/pages/home.php">
                 <img class="logo-navbar" src="/spotify/view/assets/img/spotify_logo_branca.png" alt="logo-spotify">
             </a>
-            <div>
+            <div <?php echo $usuariologado ? 'class =  "logado"' : 'class =  "deslogado"'; ?>>
                 <ul class="itens-navbar-esquerda">
                     <li>
                         <button class="btn-home" type="button">
@@ -34,7 +34,7 @@ $usuariologado = $_SESSION['usuario_logado'] ?? null;
                 </ul>
             </div>
             <?php if (empty($usuariologado)): ?>
-                <>
+                <div>
                     <ul class="navbar-links">
                         <li>
                             <a href="" class="links"><span class="span-links">Premium</span></a> <!-- link premium -->
@@ -66,13 +66,13 @@ $usuariologado = $_SESSION['usuario_logado'] ?? null;
                             <!-- btn entrar -->
                         </li>
                     </ul>
-            </div>
-        <?php else: ?>
-            <button>
-                <img src="" alt="foto-perfil"> <!-- foto do usuario -->
-            </button>
-            <a href="\spotify\view\pages\login\logout.php"><span>Sair</span></a>
-        <?php endif; ?>
+                </div>
+            <?php else: ?>
+                <button class="btn-perfil-usuario">
+                    <img class="foto-perfil-usuario" src="" alt="foto-perfil"> <!-- foto do usuario -->
+                </button>
+                <a href="\spotify\view\pages\login\logout.php"><span>Sair</span></a>
+            <?php endif; ?>
         </div>
     </nav>
 </header>
