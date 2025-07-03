@@ -20,16 +20,19 @@ include_once __DIR__ . "/../../components/head.php";
 
 ?>
 
-<body>
-    <main class="main-login">
-        <div class="box-login">
+<body class="body-cadastro">
+    <main>
+        <div class="corpo-cadastro">
             <form action="" method="POST">
-                <label class="label-login" for="email">Email</label>
-                <input class="input-login" type="text" name="email" required>
-                <label class="label-login" for="senha">Senha</label>
-                <input class="input-login" type="password" name="senha" required>
+                <img class="logo-cadastro" src="/spotify/view/assets/img/spotify_logo_branca.png" alt="logo-spotify">
+                <div>
+                    <p class="p-text"><span>
+                            Se inscreva e comece a curtir
+                        </span></p>
+                </div>
+
                 <div class="container-btn">
-                    <button class="btn-login" type="submit">Cadastrar</button>
+                    <button class="btn-login" type="submit"><span>Avançar</span></button>
                 </div>
             </form>
         </div>

@@ -5,9 +5,12 @@
   color: #ffff;
 }
 
+.body-cadastro {
+  background-color: black;
+}
 
-@media(max-width: 1920px){
-  .main-login{
+@media (max-width: 1920px) {
+  .main-login {
     min-height: 120vh;
   }
 }
@@ -17,4 +20,3 @@
     min-height: 120vh;
   }
 }
-

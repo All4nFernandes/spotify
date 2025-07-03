@@ -85,9 +85,8 @@ include_once __DIR__ . "/../../components/head.php";
                             <span class="mensagem-erro"><?php echo $erro; ?></span>
                             <!-- Informa a mensagem de erro caso o usuário não tenha inserido o email ou senha corretamente -->
                         <?php endif; ?>
-
                     </div>
-                    <div class="container-btn">
+                    <div>
                         <button class="btn-login" type="submit">Continuar</button>
                     </div>
                     <div class="box-increver-se">
