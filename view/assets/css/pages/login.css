@@ -141,6 +141,10 @@
   color: #ffff;
 }
 
+.increver-se:hover{
+  color: rgb(5, 222, 5);
+}
+
 @media (max-width: 1366px) {
   .box-login {
     width: 50%;

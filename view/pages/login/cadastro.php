@@ -30,6 +30,11 @@ include_once __DIR__ . "/../../components/head.php";
                             Se inscreva e comece a curtir
                         </span></p>
                 </div>
+                <div class= "container-login-input">
+                <label class="label-login" for="email"><span>E-mail ou nome de usuário</span> </label>
+                        <input class="login-input" type="text" name="email" placeholder="E-mail ou nome de usuário"
+                            required>
+                </div>
 
                 <div class="container-btn">
                     <button class="btn-login" type="submit"><span>Avançar</span></button>
