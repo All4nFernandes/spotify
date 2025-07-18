@@ -96,6 +96,15 @@
   width: 300px;
   height: 7vh;
   box-sizing: border-box;
+  opacity: 0.8;
+}
+
+.login-input:hover{
+  opacity: 1;
+}
+
+.login-input:focus-within{
+  border: 1px solid white;
 }
 
 .mensagem-erro {
@@ -145,7 +154,7 @@
   color: rgb(5, 222, 5);
 }
 
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   .box-login {
     width: 50%;
     height: 108vh;
@@ -155,4 +164,4 @@
     position: relative;
     left: 3%;
   }
-}
+} */
