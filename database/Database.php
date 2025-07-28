@@ -3,11 +3,11 @@
 class Database
 {
 
-    private $host = "localhost";
+    private $host = "sql309.infinityfree.com";
     private $port = "3306";
-    private $dbName = "Spotify";
-    private $user = "root";
-    private $password = "";
+    private $dbName = "if0_39580148_kurosound_db";
+    private $user = "if0_39580148";
+    private $password = "PWzYxcSAbylAQB";
 
     public function conectar()
     {
