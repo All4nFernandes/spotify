@@ -23,7 +23,7 @@ include_once __DIR__ . "/../../components/head.php";
 <body>
     <main class="main-login">
         <div class="box-login">
-            <form action="" method="POST">
+            <form action="login.php" method="POST">
                 <label class="label-login" for="email">Email</label>
                 <input class="input-login" type="text" name="email" required>
                 <label class="label-login" for="senha">Senha</label>
@@ -34,4 +34,5 @@ include_once __DIR__ . "/../../components/head.php";
             </form>
         </div>
     </main>
+    <?php include_once __DIR__ . "/../../components/footer.php"; ?>
 </body>
