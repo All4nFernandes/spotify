@@ -41,7 +41,7 @@ include_once __DIR__ . "/../../components/head.php";
                 <a href="/home.php">
                     <img class="logo-spotify" src="\spotify\view\assets\img\spotify_logo_branca.png" alt="logo">
                 </a>
-                <h1 class="title-login">Entrar no Spotify</h1>
+                <h1 class="title-login">Entrar no KuroSound</h1>
             </div>
             <div>
                 <ul class="icones-centralizados">
