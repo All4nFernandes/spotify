@@ -14,7 +14,7 @@ class Database
         if ($_SERVER['HTTP_HOST'] == 'localhost') {
             // Ambiente LOCAL (XAMPP)
             $this->host = "localhost";
-            $this->dbName = "kurosound_db"; // crie esse banco no phpMyAdmin do XAMPP
+            $this->dbName = "spotify_db"; // 
             $this->user = "root";
             $this->password = "";
         } else {
