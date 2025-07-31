@@ -2,21 +2,41 @@
 
 class Database
 {
-
-    private $host = "localhost";
+    private $host;
     private $port = "3306";
-    private $dbName = "Spotify";
-    private $user = "root";
-    private $password = "";
+    private $dbName;
+    private $user;
+    private $password;
+
+    public function __construct()
+    {
+        // Detecta se está rodando localmente (XAMPP) ou no InfinityFree
+        if ($_SERVER['HTTP_HOST'] == 'localhost') {
+            // Ambiente LOCAL (XAMPP)
+            $this->host = "localhost";
+            $this->dbName = "kurosound_db"; // crie esse banco no phpMyAdmin do XAMPP
+            $this->user = "root";
+            $this->password = "";
+        } else {
+            // Ambiente InfinityFree (ONLINE)
+            $this->host = "sql309.infinityfree.com";
+            $this->dbName = "if0_39580148_kurosound_db";
+            $this->user = "if0_39580148";
+            $this->password = "PWzYxcSAbylAQB";
+        }
+    }
 
     public function conectar()
     {
-        $url = "mysql:host=$this->host;port=$this->port;dbname=$this->dbName";
-        $conn = new PDO($url, $this->user, $this->password);
-        return $conn;
+        try {
+            $url = "mysql:host={$this->host};port={$this->port};dbname={$this->dbName};charset=utf8";
+            $conn = new PDO($url, $this->user, $this->password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $conn;
+        } catch (PDOException $e) {
+            die("Erro de conexão: " . $e->getMessage());
+        }
     }
-
 }
-
 
 ?>

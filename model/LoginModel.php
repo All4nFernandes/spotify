@@ -7,7 +7,7 @@ include_once __DIR__ . '\..\database\Database.php';
 class LoginModel
 {
     protected $conn;
-    protected $tabela = "login";
+    protected $tabela = "usuarios";
 
     public function __construct()
     {

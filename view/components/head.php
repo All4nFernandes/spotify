@@ -10,5 +10,5 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" type="imagex/png" href="/spotify/view/assets/img/favicon/spotify-icone-verde.ico">
-    <title>Spotify -- Web Player: música para todas as pessoas</title>
+    <title>KuroSound -- Web Player: música para todas as pessoas</title>
 </head>
