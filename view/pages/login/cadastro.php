@@ -22,6 +22,7 @@ include_once __DIR__ . "/../../components/head.php";
 
 ?>
 
+<<<<<<< HEAD
 <body class="body-cadastro">
     <main>
         <div class="corpo-cadastro">
@@ -42,6 +43,16 @@ include_once __DIR__ . "/../../components/head.php";
                         <a class = "CadastrarComTelefone" href=""><span>Usar número de telefone.</span></a>
                 </div>
 
+=======
+<body>
+    <main class="main-login">
+        <div class="box-login">
+            <form action="login.php" method="POST">
+                <label class="label-login" for="email">Email</label>
+                <input class="input-login" type="text" name="email" required>
+                <label class="label-login" for="senha">Senha</label>
+                <input class="input-login" type="password" name="senha" required>
+>>>>>>> 37fe4b72e9d45b4c04afbfd962c2799df7f85be8
                 <div class="container-btn">
                     <button class="btn-login" type="submit"><span>Avançar</span></button>
                 </div>
@@ -69,4 +80,5 @@ include_once __DIR__ . "/../../components/head.php";
             </form>
         </div>
     </main>
+    <?php include_once __DIR__ . "/../../components/footer.php"; ?>
 </body>
