@@ -14,7 +14,7 @@ class Database
         if ($_SERVER['HTTP_HOST'] == 'localhost') {
             // Ambiente LOCAL (XAMPP)
             $this->host = "localhost";
-            $this->dbName = "spotify_db"; // 
+            $this->dbName = "spotify"; // 
             $this->user = "root";
             $this->password = "";
         } else {

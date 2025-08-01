@@ -45,7 +45,12 @@ include_once __DIR__ . "/../../components/head.php";
                 <div class="container-btn">
                     <button class="btn-login" type="submit"><span>Avançar</span></button>
                 </div>
-                <div>
+                <div class="escolha-alternativa">
+                    <hr class="barra-vertical-alternativa">
+                    <p class="span-alternativa"><span>
+                            ou
+                        </span></p>
+                    <hr class="barra-vertical-alternativa">
                     <!-- fazer barra para separar com 'ou' no meio delas  -->
                 </div>
                 <div>
@@ -66,6 +71,13 @@ include_once __DIR__ . "/../../components/head.php";
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <hr class="barra-vertical-cadastro">
+                    <div class="box-increver-se">
+                        <span class="sem-conta">Já tem uma conta?</span>
+                        <a class="increver-se" href="login.php">Faça login aqui.</a>
+                    </div>
                 </div>
             </form>
         </div>

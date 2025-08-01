@@ -26,10 +26,40 @@
   padding: 10px;
 }
 
-.CadastrarComTelefone{
+.CadastrarComTelefone {
   color: rgb(0, 216, 0);
   text-align: left;
   margin-top: 12px;
   font-size: 14px;
+}
 
+.escolha-alternativa {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+  position: relative;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.barra-vertical-alternativa {
+  width: 15vw;
+  opacity: 0.6;
+  color: gray;
+}
+
+.span-alternativa {
+  display: flex;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.barra-vertical-cadastro {
+  width: 20vw;
+  margin-top: 38px;
+  opacity: 0.2;
+  color: gray;
 }
