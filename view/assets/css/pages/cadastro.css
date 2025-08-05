@@ -32,22 +32,35 @@
   margin-top: 12px;
   font-size: 14px;
 }
+.box-escolha {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
 
 .escolha-alternativa {
   display: flex;
-  width: 50vw;
+  width: 25vw;
   justify-content: center;
   text-align: center;
   padding: 0px;
   position: relative;
-  margin-left: 25vw;
+  margin-left: 37vw;
   margin-right: 25vw;
+  margin: 0px;
 }
 
 .barra-vertical-alternativa {
-  width: 15vw;
+  width: 10vw;
   opacity: 0.6;
   color: gray;
+  padding: 0px;
+  margin: 0px;
+  height: 0vh;
+  margin-left: -11vw;
+  margin-right: -11vw;
+  margin-top: 0.5vw;
+  opacity: 0.4;
 }
 
 .span-alternativa {

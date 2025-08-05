@@ -45,13 +45,15 @@ include_once __DIR__ . "/../../components/head.php";
                 <div class="container-btn">
                     <button class="btn-login" type="submit"><span>Avançar</span></button>
                 </div>
-                <div class="escolha-alternativa">
+                <div class="box-escolha">
                     <hr class="barra-vertical-alternativa">
-                    <p class="span-alternativa"><span>
+                    <div class="escolha-alternativa">
+                        <span class="span-alternativa">
                             ou
-                        </span></p>
+                        </span>
+                        <!-- fazer barra para separar com 'ou' no meio delas  -->
+                    </div>
                     <hr class="barra-vertical-alternativa">
-                    <!-- fazer barra para separar com 'ou' no meio delas  -->
                 </div>
                 <div>
                     <!-- cadastrar com google e apple -->
